@@ -1,0 +1,23 @@
+{
+  "name": "ident-express",
+  "version": "0.0.0",
+  "description": "Add results from ident daemon to your express request objects",
+  "main": "code/ident-express.js",
+  "scripts": {
+    "test": "true",
+    "prepublish": "coffee -c code"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scraperwiki/ident-express.git"
+  },
+  "keywords": [
+    "ident",
+    "identd",
+    "rfc1413",
+    "express.js",
+    "express"
+  ],
+  "author": "ScraperWiki Limited",
+  "license": "BSD"
+}
