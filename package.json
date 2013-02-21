@@ -1,6 +1,6 @@
 {
   "name": "ident-express",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add results from ident daemon to your express request objects",
   "main": "code/ident-express.js",
   "scripts": {
