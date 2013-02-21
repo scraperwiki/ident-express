@@ -4,7 +4,7 @@ checkIdent = (req, resp, next) ->
   # If available, the nginx x-real-port, x-server-port, x-real-ip
   # headers are used.
   remotePort = req.headers['x-real-port'] or req.connection.remotePort
-  localPort = req.headers['x-server-port'] or port
+  localPort = req.headers['x-server-port'] or req.socket.address().port
 
   # See RFC 1413 http://www.ietf.org/rfc/rfc1413.txt
   socket = net.connect
