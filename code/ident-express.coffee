@@ -1,3 +1,4 @@
+require 'net'
 
 checkIdent = (req, resp, next) ->
   # If available, the nginx x-real-port, x-server-port, x-real-ip
