@@ -13,6 +13,10 @@ checkIdent = (req, resp, next) ->
   , ->
     socket.write "#{remotePort},#{localPort}\r\n"
   data = ''
+  # A timeout of 30 seconds is mentioned in the RFC.
+  socket.setTimeout 30, ->
+    socket.destroy()
+    next()
   socket.on 'error', (err) ->
     next()
   socket.on 'data', (buffer) ->
